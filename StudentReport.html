@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Report</title>
+  <style>
+    body { font-family: Arial; background: #f0f2f5; margin: 0; padding: 0; }
+    .container {
+      max-width: 400px; margin: 50px auto; background: #fff;
+      padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    input[type=number], button {
+      width: 100%; padding: 8px; margin-top: 8px; font-size: 16px;
+    }
+    button {
+      background: #007bff; color: #fff; border: none; cursor: pointer;
+    }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Student Marks</h2>
+    <form action="StudentReportServlet" method="post">
+      <label>Subject 1:</label>
+      <input type="number" name="sub1" min="0" max="100" required>
+      <label>Subject 2:</label>
+      <input type="number" name="sub2" min="0" max="100" required>
+      <label>Subject 3:</label>
+      <input type="number" name="sub3" min="0" max="100" required>
+      <label>Subject 4:</label>
+      <input type="number" name="sub4" min="0" max="100" required>
+      <label>Subject 5:</label>
+      <input type="number" name="sub5" min="0" max="100" required>
+      <button type="submit">Generate Report</button>
+    </form>
+  </div>
+</body>
+</html>
